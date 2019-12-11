@@ -71,9 +71,9 @@ def ssh_connection(ip):
         time.sleep(3)
         
         #Entering global config mode
-        #connection.send("\n")
-        #connection.send("configure terminal\n")
-        #time.sleep(1)
+        connection.send("\n")
+        connection.send("configure terminal\n")
+        time.sleep(1)
         
         #Open user selected file for reading
         selected_cmd_file = open(cmd_file, 'r')
